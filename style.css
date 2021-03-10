@@ -1,0 +1,278 @@
+body{
+    background:#F5F7FA;
+    font-size:16px;
+    color:#1F2933;
+}
+.container{
+    padding:0 0 43px 0;
+}
+
+/* size */
+.h1-font{
+    font-size:48px;
+    padding:57px 0 42px 0;
+}
+.h2-font{
+    font-size:32px;
+}
+.h3-font{
+    font-size:24px;
+}
+.tiny{
+    font-size:12px;
+}
+.small{
+    font-size:14px;
+}
+
+/* color */
+.color-1{
+    color:#323F4B;
+}
+.color-2{
+    color:#3E4C59;
+}
+.color-3{
+    color:#1F2933;
+}
+.button-1{
+    color:#0967D2;
+    border: 0.5px solid #0967D2;
+    background:#fff;
+}
+.button-2{
+    color:#fff;
+    border: 0.5px solid #0967D2;
+    background:#0967D2;
+}
+.button-3{
+    color:#0967D2;
+    border: 0.5px solid #0967D2;
+    background:#E6F6FF;
+}
+
+/* widgets */
+.badge-alt{
+    border: 1px solid #724BB7;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding:8px 16px;
+    margin:0 16px 10px 0;
+    display:inline-block;
+}
+ul{
+    margin:0;
+    padding-left:15px;
+    list-style:none;
+    list-style-image: url('widgets/list-bullet.svg');
+}
+ul li::marker {
+    padding:0 12px 10px 0;
+}
+button{
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding:14px 32px;
+    outline:none;
+    font-size:16px;
+}
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    top:2.5px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 17px;
+    width: 17px;
+    left: 1px;
+    bottom: 1.5px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #0967D2;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #0967D2;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* general */
+.right{
+    text-align:right;
+}
+.container-alt{
+    background: #FFFFFF;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+}
+.info{
+    border-bottom: 1px solid #CBD2D9;
+    margin:0;
+    padding:0;
+}
+.info .big-section{
+    padding:50px 226px 50px 24px;
+    border-right: 1px solid #CBD2D9;
+}
+.info .big-section .head{
+    margin-bottom:45px;
+}
+.info .big-section .small{
+    margin-bottom:13px;
+}
+.info .big-section .description{
+    margin-bottom:50px;
+}
+.info .big-section .technology{
+    margin-bottom:40px;
+}
+
+
+.main-side{
+    padding:0;
+}
+.main-side .action{
+    display:flex;
+    justify-content:space-between;
+    padding:35px 30px;
+    border-bottom: 1px solid #CBD2D9;
+}
+.main-side .budget{
+    padding:35px 24px 50px 24px;
+    border-bottom: 1px solid #CBD2D9;
+}
+.main-side .budget .head .h3-font{
+    margin-bottom:11px;
+}
+.main-side .budget .head{
+    margin-bottom:30px;
+}
+.main-side .status{
+    display:flex;
+    justify-content:space-between;
+    padding:35px 24px 50px 24px;
+}
+
+
+
+
+.reviews{
+    padding:45px 24px;
+}
+.reviews .head{
+    margin-bottom:22px;
+}
+.reviews .item{
+    padding:25px 16px;
+    border: 1px solid #E4E7EB;
+    box-sizing: border-box;
+    border-radius: 3px;
+    margin-bottom:16px;
+}
+.reviews .item .content .image .image-inner{
+    width:120px;
+    height:120px;
+    background:grey;
+    border-radius:6.5px;
+}
+.reviews .item .content .inner-content .subhead{
+    margin-bottom:23px;
+}
+.reviews .item .content .inner-content .subhead .name{
+    font-size:18px;
+}
+.reviews .item .content .inner-content .skills{
+    margin:22px 0 18px 0;
+}
+.reviews .item .content .inner-content .button-container button{
+    margin-right:24px;
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* tablet portrait */
+@media screen and (max-width:1024px){  
+    .right{
+        margin-top:20px;
+        text-align:left;
+    }
+
+    .info .big-section{
+        padding:50px 24px;
+    }
+}
+
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+/* break */
+
+/* mobile */
+@media screen and (max-width:426px){
+    button{
+        display:block;
+        width:100%;
+        margin-bottom:10px;
+    }  
+}
